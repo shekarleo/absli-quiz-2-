@@ -181,7 +181,7 @@ h1{font-size:clamp(28px,7vw,44px);font-weight:800;line-height:1.1;background:lin
 // ====================================================
 // STEP 1: PASTE YOUR APPS SCRIPT URL BETWEEN THE QUOTES
 // ====================================================
-var SHEET_URL = 'https://script.google.com/macros/s/AKfycbwJOPkUC6_hnWIK_EnHv5Nsz5HVI9UN_zhPSxNh0sXSx9FzPLyfJ4-zg8FkaQmvO99c/exec';
+var SHEET_URL = 'https://script.google.com/macros/s/AKfycbw2AIJXdt1uXLpcr-0Vz5DpieTfvD4_qw0IDKaX1F0lDRKwAqo33sMqcI7SS8JTszPB/exec';
 // ====================================================
 
 var Q_COUNT=15;
@@ -243,7 +243,7 @@ function renderLB(containerId){
 
 // ── Send to Google Sheets via GET params ──────────────────────
 function sendToSheet(data){
-  if(!SHEET_URL||SHEET_URL==='https://script.google.com/macros/s/AKfycbwJOPkUC6_hnWIK_EnHv5Nsz5HVI9UN_zhPSxNh0sXSx9FzPLyfJ4-zg8FkaQmvO99c/exec')return;
+  if(!SHEET_URL||SHEET_URL==='https://script.google.com/macros/s/AKfycbw2AIJXdt1uXLpcr-0Vz5DpieTfvD4_qw0IDKaX1F0lDRKwAqo33sMqcI7SS8JTszPB/exec')return;
   var cs=data.catScores||{};
   var p=new URLSearchParams({
     name:data.name, team:data.team,
